@@ -1,3 +1,8 @@
-def my_each # put argument(s) here
-  # code here
+def my_each(inspiration)
+  i = 0
+  while i < inspiration.length
+    yield(inspiration[i])
+    i = i + 1
+  end
+  inspiration
 end
